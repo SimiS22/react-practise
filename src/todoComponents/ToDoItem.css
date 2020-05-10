@@ -1,0 +1,14 @@
+.todoList{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border : 1px solid #efefef;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 
+    0 1px 1px rgba(0,0,0,0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0,0,0,0.15),
+    0 20px 1px -9px #eee;
+}

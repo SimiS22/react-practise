@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import ToDoItem from './components/ToDoItem'
+import Header from './components-basics/Header'
+import Footer from './components-basics/Footer'
+// import MainContent from './components-basics/MainContent'
+import TimeOfDay from './components-basics/TimeOfDay'
+// import ToDoItem from './todoComponents/ToDoItem'
+import ContactCard from './contactCardComponents/ContactCard'
+import tom from './contactCardComponents/tom.jpg'
+import jerry from './contactCardComponents/jerry.png'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    console.log(tom)
+    return (
+        <div>
+            <Header />
+            {/* <MainContent />
+            <ToDoItem /> */}
+            <TimeOfDay />
+            {/* <ContactCard name="Tom" imgUrl={tom} email='tom@tomandjerry.com' phone='12345678' /> 
+            <ContactCard name="Jerry" imgUrl={jerry} email='jerry@tomandjerry.com' phone='12345678' /> */}
+            <ContactCard contact={
+                {
+                    name: "Tom",
+                    imgUrl: tom,       // to be noted : inside an object image name is given without curly brackets
+                    email: 'tom@tomandjerry.com',
+                    phone: '12345678'
+                }
+            } />
+            <ContactCard contact={
+                {
+                    name: "Jerry",
+                    imgUrl: jerry,
+                    email: 'jerry@tomandjerry.com',
+                    phone: '12345678'
+                }
+            } />
+            <Footer />
+        </div>
+    )
 }
-
-export default App;
+export default App
