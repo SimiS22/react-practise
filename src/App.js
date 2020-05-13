@@ -2,7 +2,7 @@ import React from 'react'
 // import ToDoItem from './components/ToDoItem'
 import Header from './components-basics/Header'
 import Footer from './components-basics/Footer'
-// import MainContent from './components-basics/MainContent'
+import MainContent from './components-basics/MainContent'
 import TimeOfDay from './components-basics/TimeOfDay'
 // import ToDoItem from './todoComponents/ToDoItem'
 import ContactCard from './contactCardComponents/ContactCard'
@@ -14,9 +14,10 @@ const App = () => {
     return (
         <div>
             <Header />
-            {/* <MainContent />
+            {/* 
             <ToDoItem /> */}
             <TimeOfDay />
+            <MainContent />
             {/* <ContactCard name="Tom" imgUrl={tom} email='tom@tomandjerry.com' phone='12345678' /> 
             <ContactCard name="Jerry" imgUrl={jerry} email='jerry@tomandjerry.com' phone='12345678' /> */}
             <ContactCard contact={

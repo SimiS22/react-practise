@@ -1,0 +1,19 @@
+$fontSize : 25px;
+$fontSizeParent :40px;
+
+.father{
+    color : blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: $fontSizeParent;
+    .mother{
+        color:green;
+        font-size: $fontSizeParent;
+        .address{
+            color:blueviolet;
+        }
+    }
+    *{
+        color: orange;
+        font-size: $fontSize;
+    }
+}

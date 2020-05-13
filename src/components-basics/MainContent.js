@@ -1,5 +1,5 @@
 import React from 'react' // should be used in every file where we use JSX
-import './Main-content.css'
+import './Main-content.scss'
 
 function MainContent() {  // Components must be of capital letter
     return (
